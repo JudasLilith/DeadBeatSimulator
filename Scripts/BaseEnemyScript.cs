@@ -103,7 +103,7 @@ public class BaseEnemyScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (timerForDamageCooldown > 2.5f)
+        if (timerForDamageCooldown > 2.5f && collision.gameObject.tag = "Player")
         {
             PlayerMovementScript pScript = collision.gameObject.GetComponent<PlayerMovementScript>();
             pScript.takeDamage();
