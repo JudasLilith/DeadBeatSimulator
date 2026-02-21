@@ -108,6 +108,7 @@ public class BaseEnemyScript : MonoBehaviour
             PlayerMovementScript pScript = collision.gameObject.GetComponent<PlayerMovementScript>();
             pScript.takeDamage();
             timerForDamageCooldown = 0;
+            StartCoroutine(Disappear());
         }
     }
 

@@ -26,6 +26,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     public Image healthIndicator;
     public GameObject smoke; //indicator for low health
+    public GameObject fire;
     public Sprite hitOnce;
     public Sprite hitTwice;
 
@@ -61,11 +62,11 @@ public class PlayerMovementScript : MonoBehaviour
         playerMaxHits -= 1;
         if (playerMaxHits == 2)
         {
-
+            smoke.SetActive(true);
         }
         if (playerMaxHits == 1)
         {
-
+            fire.SetActive(true);
         }
         if (playerMaxHits <= 0)
         {

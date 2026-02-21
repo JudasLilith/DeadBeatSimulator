@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6a12647fca2c44cb854f11376156c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeTillDisappear: 10
+  timeTillDisappear: 15
   acceleration: 0.75
   decellerationMultiplier: 3.5
   maxSpeed: 9
