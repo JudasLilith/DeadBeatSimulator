@@ -29,6 +29,7 @@ public class PlayerMovementScript : MonoBehaviour
     public GameObject fire;
     public GameObject hitOnce;
     public GameObject hitTwice;
+    public GameObject deathEffect;
 
 
     // Start is called before the first frame update
@@ -73,6 +74,8 @@ public class PlayerMovementScript : MonoBehaviour
         if (playerMaxHits <= 0)
         {
             playerAlive = false;
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
             //die
         }
     }

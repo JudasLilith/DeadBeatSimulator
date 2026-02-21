@@ -108,8 +108,8 @@ MonoBehaviour:
   acceleration: 0.75
   decellerationMultiplier: 3.5
   maxSpeed: 11
-  turnSpeed: 0.95
-  maxTurnSpeed: 4
+  turnSpeed: 1
+  maxTurnSpeed: 7
   useBaseMovement: 1
   doDamageOnContact: 1
   basicPathfindingContacts:
