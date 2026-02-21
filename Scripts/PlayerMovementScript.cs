@@ -27,8 +27,8 @@ public class PlayerMovementScript : MonoBehaviour
     public Image healthIndicator;
     public GameObject smoke; //indicator for low health
     public GameObject fire;
-    public Sprite hitOnce;
-    public Sprite hitTwice;
+    public GameObject hitOnce;
+    public GameObject hitTwice;
 
 
     // Start is called before the first frame update
@@ -63,10 +63,12 @@ public class PlayerMovementScript : MonoBehaviour
         if (playerMaxHits == 2)
         {
             smoke.SetActive(true);
+            hitOnce.SetActive(true);
         }
         if (playerMaxHits == 1)
         {
             fire.SetActive(true);
+            hitTwice.SetActive(true);
         }
         if (playerMaxHits <= 0)
         {
