@@ -12,7 +12,7 @@ public class BaseEnemyScript : MonoBehaviour
     public float maxSpeed = 50;
 
     public float turnSpeed = 10;
-    float curTurnSpeed = 10;
+    float curTurnSpeed = 0;
     public float maxTurnSpeed = 25;
     public bool useBaseMovement = true;
     public bool doDamageOnContact = true;
@@ -45,21 +45,25 @@ public class BaseEnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerForDamageCooldown += Time.deltaTime;
-        float setCurAngle = 0;
-        if (HandleObstacles() != -999)
+        if (useBaseMovement)
         {
-            setCurAngle = HandleObstacles();
+            timerForDamageCooldown += Time.deltaTime;
+            float setCurAngle = 0;
+            if (HandleObstacles() != -999)
+            {
+                setCurAngle = HandleObstacles();
+            }
+            else
+            {
+                Vector2 dir = target.position - transform.position;
+                float wantedAngle = Mathf.Rad2Deg * Mathf.Atan2(dir.y, dir.x);
+                setCurAngle = Mathf.LerpAngle(transform.eulerAngles.z, wantedAngle, curTurnSpeed * Time.deltaTime);
+                curTurnSpeed = Mathf.Lerp(curTurnSpeed, maxTurnSpeed, turnSpeed * Time.deltaTime);
+            }
+            transform.eulerAngles = new Vector3(0, 0, setCurAngle);
+            curSpeed = Mathf.Lerp(curSpeed, maxSpeed, acceleration * Time.deltaTime);
+            transform.Translate(new Vector2(1, 0) * curSpeed * Time.deltaTime);
         }
-        else
-        {
-            Vector2 dir = target.position - transform.position;
-            float wantedAngle = Mathf.Rad2Deg * Mathf.Atan2(dir.y, dir.x);
-            setCurAngle = Mathf.LerpAngle(transform.eulerAngles.z, wantedAngle, curTurnSpeed * Time.deltaTime);
-        }
-        transform.eulerAngles = new Vector3(0, 0, setCurAngle);
-        curSpeed = Mathf.Lerp(curSpeed, maxSpeed, acceleration * Time.deltaTime);
-        transform.Translate(new Vector2(1, 0) * curSpeed * Time.deltaTime);
     }
 
     private float HandleObstacles()
@@ -121,10 +125,13 @@ public class BaseEnemyScript : MonoBehaviour
     IEnumerator Disappear()
     {
         useBaseMovement = false;
+        float targetRotate = transform.eulerAngles.z + 180;
         for (int i = 0; i < 200; i++)
         {
+            float rotateAmount = Mathf.LerpAngle(transform.eulerAngles.z, targetRotate, maxTurnSpeed * 0.01f);
+            transform.eulerAngles = new Vector3(0, 0, rotateAmount);
             yield return new WaitForSeconds(0.01f);
-            curSpeed = Mathf.Lerp(curSpeed, -maxSpeed * 3f, acceleration * decellerationMultiplier * 0.01f);
+            curSpeed = Mathf.Lerp(curSpeed, maxSpeed * 3f, acceleration * decellerationMultiplier * 0.01f);
             transform.Translate(new Vector2(1, 0) * curSpeed * Time.deltaTime);
         }
         Destroy(gameObject);

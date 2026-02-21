@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WaveManager : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class WaveManager : MonoBehaviour
     public float minDistanceAway = 20;
     public float maxDistanceAway = 50;
 
+    public TextMeshProUGUI timerText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,13 +41,23 @@ public class WaveManager : MonoBehaviour
             spawnWave();
             waveTimer = 0;
         }
-        //curStar = Mathf.CeilToInt(timer / 60);
-        
+        curStar = Mathf.CeilToInt(timer / 60);
+        timerText.text = "" + (5 - Mathf.CeilToInt(timer / 60)) + ":";
+        int toAdd = (60 - Mathf.RoundToInt(timer - (60 * (curStar - 1))));
+        if (toAdd < 10)
+        {
+            timerText.text += "0" + toAdd;
+        }
+        else
+        {
+            timerText.text += toAdd;
+        }
+
     }
 
     void spawnWave()
     {
-        int count = Mathf.CeilToInt(timer / 100);
+        int count = Mathf.CeilToInt(timer / 45);
         //int count = 1;
         for (int i = 0; i < count; i++)
         {
@@ -61,10 +74,20 @@ public class WaveManager : MonoBehaviour
             else if (curStar == 2)
             {
                 int random = Random.Range(0, star2List.Length);
+                GameObject obj = Instantiate(star2List[random], spawnPos.position, Quaternion.identity);
+                float angle = Random.Range(0, 360);
+                Vector2 moveDir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+                obj.transform.Translate(moveDir.normalized * distance);
+                obj.GetComponent<BaseEnemyScript>().setStartAngle();
             }
             else if (curStar == 3)
             {
                 int random = Random.Range(0, star3List.Length);
+                GameObject obj = Instantiate(star3List[random], spawnPos.position, Quaternion.identity);
+                float angle = Random.Range(0, 360);
+                Vector2 moveDir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
+                obj.transform.Translate(moveDir.normalized * distance);
+                obj.GetComponent<BaseEnemyScript>().setStartAngle();
             }
             else if (curStar == 4)
             {
