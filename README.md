@@ -1,3 +1,3 @@
 # Dead Beat Simulator
 
-Game submitted for Campfire Flagship
+Simulate a dead beat dad on demand!
