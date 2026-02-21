@@ -8,7 +8,9 @@
 - UI screens - **Adriana**
   - Title screen
     - Play
-    - Options (Wii remote or keyboard and mouse)
+    - Options
+      - Input: Wii remove or keyboard/mouse (Toggle)
+      - Volume (slider)
     - About
   - Ending screens
     - One for success (escape cops, beat kids)
