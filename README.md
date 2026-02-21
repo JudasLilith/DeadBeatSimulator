@@ -24,9 +24,9 @@ There are two options to use for the controller:
 
 ### Keyboard + Mouse
 
-- **Move forward** - Page up
+- **Move forward** - Page up / Fn + up arrow
 
-- **Move backward** - Page down
+- **Move backward** - Page down / Fn + down arrow
 
 - **Turn** - Arrow keys
 

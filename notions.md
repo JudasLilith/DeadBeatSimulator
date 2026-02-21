@@ -1,21 +1,22 @@
 # So What we have to do RN
 
-### Main component 
+### Main Component 
 - Mobs - **Aaron**
   - Assets
   - Programming
 - Assets (Memes, references, etc.) - **Peter**
 - UI screens - **Adriana**
-  - Title screen
-    - Play
-    - Options
-      - Input: Wii remove or keyboard/mouse (Toggle)
-        - Create one static variable for controller (make object not destroy when changing scenes)
-      - Volume (slider)
-    - About
-      - How to play (also add to readme)
-      - Creators
-  - Ending screens
+  - ✅ Title screen
+    - ✅ Play button
+    - ✅ Options button
+      - ✅ Input: Wii remove or keyboard/mouse (Toggle)
+        - ⛔️ Create one static variable for controller (make object not destroy when changing scenes)
+      - ✅ Volume (slider)
+        - ⛔️ Test once sounds have been added
+    - ✅ About button
+      - ⛔️ How to play (update to readme as needed)
+      - ⛔️ Creators
+  - ⛔️ Ending screens
     - One for success (escape cops, beat kids)
     - One for failure (arrested, CPS protects kids)
     - Both show credits (Michael Glen's info)
