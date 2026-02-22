@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -933,7 +934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DeadBeatSimulator
+  m_text: Dead Beat Simulator
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eb4d531b33721453b91bc6efa4661a90, type: 2}
   m_sharedMaterial: {fileID: 1821850470734518920, guid: eb4d531b33721453b91bc6efa4661a90, type: 2}
@@ -3060,7 +3061,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1479383583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4279,7 +4280,7 @@ SceneRoots:
   - {fileID: 267223528}
   - {fileID: 1307625983}
   - {fileID: 199790522}
+  - {fileID: 1479383586}
   - {fileID: 1669730858}
   - {fileID: 1296586792}
-  - {fileID: 1479383586}
   - {fileID: 781879543}

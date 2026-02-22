@@ -122,7 +122,7 @@ MonoBehaviour:
   secondaryASource: {fileID: 5651020894034500436}
   maxVolume: 0.7
   hitSound: {fileID: 8300000, guid: c91e2f88e9223854bacc42f9fff7af79, type: 3}
-  hitVolume: 0.8
+  hitVolume: 1
 --- !u!50 &157411761491335272
 Rigidbody2D:
   serializedVersion: 4
