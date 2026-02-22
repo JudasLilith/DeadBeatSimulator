@@ -6,6 +6,12 @@ You are a deadbeat dad. Your wife is unhappy and wants a divorce, so you decide 
 
 **Your Goal**: Avoid the cops long enough to get home!
 
+## Links
+
+- [Playable link](https://chronocogged.itch.io/dead-beat-simulator)
+
+- [Demo video](https://youtu.be/F0dcGiVBbLU)
+
 ## How to Play
 
 There are two options to use for the controller:
