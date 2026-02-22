@@ -26,12 +26,8 @@
     - ✅ Each team member's role
     - ✅ Title screen person
     - ✅ Play again button (goes to scene index 1)
-  - ⛔️ Ending screens
-    - One for success (escape cops, beat kids)
-    - One for failure (arrested, CPS protects kids)
-    - Both show credits (Michael Glen's info)
-      - Scrolling animation (like movie credits)
-      - Possibly look for online template
+    - ⛔️ Connect to ending screens
+  - ⛔️ Cutscene
 
 ### Integration with Hardware
 - Divorce paper Mouse writing
