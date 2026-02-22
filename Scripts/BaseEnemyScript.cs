@@ -26,9 +26,24 @@ public class BaseEnemyScript : MonoBehaviour
     float timerForDamageCooldown = 2.5f;
 
     public bool partOfBossWave = false;
+    AudioSource audioSource;
+    public AudioSource secondaryASource;
+    public float maxVolume;
+
+    public AudioClip hitSound;
+    public float hitVolume;
+
+    SoundFXManager soundManager;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        if (soundManager == null)
+        {
+            soundManager = GameObject.Find("GameManager").GetComponent<SoundFXManager>();
+        }
+        audioSource = GetComponent<AudioSource>();
         obstacleAvoidanceResult = new RaycastHit2D[10];
         target = GameObject.FindGameObjectWithTag("Player").transform;
         Vector2 dir = target.position - transform.position;
@@ -47,6 +62,33 @@ public class BaseEnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (audioSource != null)
+        {
+            GameObject audioListener = GameObject.Find("Main Camera");
+            float distanceMultiplier = 1;
+            float minDistance = 3;
+            float maxDistance = 40;
+            float distance = Vector2.Distance(audioSource.transform.position, audioListener.transform.position);
+
+            if (distance < minDistance)
+            {
+                //donothingwow
+            }
+            else if (distance > maxDistance)
+            {
+                distanceMultiplier = 0;
+            }
+            else
+            {
+                distanceMultiplier = 1 - ((distance - minDistance) / (maxDistance - minDistance));
+            }
+            if (secondaryASource != null)
+            {
+                secondaryASource.volume = maxVolume * distanceMultiplier;
+            }
+            audioSource.volume = maxVolume * distanceMultiplier;
+        }
+
         if (!partOfBossWave && WaveManager.curStar >= 5 && useBaseMovement)
         {
             StartCoroutine(Disappear());
@@ -118,6 +160,10 @@ public class BaseEnemyScript : MonoBehaviour
             PlayerMovementScript pScript = collision.gameObject.GetComponent<PlayerMovementScript>();
             pScript.takeDamage();
             timerForDamageCooldown = 0;
+            if (hitSound != null)
+            {
+                soundManager.PlaySoundFXClip(hitSound, transform, hitVolume, 0.95f, 1.05f, false);
+            }
             StartCoroutine(Disappear());
         }
     }

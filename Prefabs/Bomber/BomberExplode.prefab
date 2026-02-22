@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8638694734613857046}
   - component: {fileID: 5229259854367506646}
   - component: {fileID: -1355854738696889808}
+  - component: {fileID: -5288718872114399451}
   m_Layer: 3
   m_Name: BomberExplode
   m_TagString: Untagged
@@ -4984,6 +4985,24 @@ MonoBehaviour:
   expansionTimeMax: 1
   destroyAfterExpand: 1
   expander: {fileID: 0}
+--- !u!114 &-5288718872114399451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3924278188310398007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c090c301f362b4ca31aa2ee6b5f355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundDelay: 0
+  pitchMin: 1
+  pitchMax: 1
+  volume: 0.5
+  affectedByDistance: 1
+  soundFX: {fileID: 8300000, guid: 9134ea41e12eca542b9ac3511de4b4c0, type: 3}
 --- !u!1 &6740140928633529139
 GameObject:
   m_ObjectHideFlags: 0

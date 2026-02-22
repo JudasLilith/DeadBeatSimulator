@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 8328672309070687482}
   - component: {fileID: 7106256069127799366}
   - component: {fileID: 6018163326846682271}
+  - component: {fileID: -6077400640806165968}
   m_Layer: 7
   m_Name: TankBul
   m_TagString: Untagged
@@ -291,7 +292,7 @@ MonoBehaviour:
   damageMultiplier: 1
   hasADeathAttack: 0
   doDAttackWBOrP: 0
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 5696314363534203555, guid: 617da7fbc4cfd554db998a80e9194a99, type: 3}
   diesOut: 0
   dieOutTime: 0
   colRadius: 1
@@ -301,3 +302,21 @@ MonoBehaviour:
   expansionTimeMax: 1
   destroyAfterExpand: 1
   expander: {fileID: 0}
+--- !u!114 &-6077400640806165968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186098743485465166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c090c301f362b4ca31aa2ee6b5f355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundDelay: 0
+  pitchMin: 1
+  pitchMax: 1
+  volume: 0.8
+  affectedByDistance: 1
+  soundFX: {fileID: 8300000, guid: 21001508910a53844a26690da011c133, type: 3}

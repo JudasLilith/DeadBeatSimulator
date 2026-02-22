@@ -4899,6 +4899,8 @@ GameObject:
   - component: {fileID: 2841200472426334196}
   - component: {fileID: 1977545451807722131}
   - component: {fileID: 3338052822495185922}
+  - component: {fileID: -4220150481424396338}
+  - component: {fileID: 3933060120041811444}
   m_Layer: 3
   m_Name: Explode
   m_TagString: Untagged
@@ -9777,3 +9779,34 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-4220150481424396338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696314363534203555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46be929446f7bee4c8ecb0dd7f51bc95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathTime: 0.7
+--- !u!114 &3933060120041811444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5696314363534203555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c090c301f362b4ca31aa2ee6b5f355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundDelay: 0
+  pitchMin: 1
+  pitchMax: 1
+  volume: 0.6
+  affectedByDistance: 1
+  soundFX: {fileID: 8300000, guid: 4967f33d314fc074b9915ede4e928add, type: 3}

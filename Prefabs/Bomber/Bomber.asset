@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfAttack: 1
   invincibleWhenAttack: 0
-  atkDelayS: 1
+  atkDelayS: 0.2
   atkDelayE: 2
   attackIndicator: {fileID: 0}
   otherIndicator: {fileID: 0}
@@ -39,8 +39,8 @@ MonoBehaviour:
   startRegularAngle: 0
   endRegularAngle: 0
   randomAngles: 0
-  RepeatAmount: 20
-  RepeatRate: 0.1
+  RepeatAmount: 17
+  RepeatRate: 0.25
   alwaysChangeTarget: 0
   movementType: 0
   repeatAmount: 0
@@ -49,4 +49,4 @@ MonoBehaviour:
   mEffect: {fileID: 0}
   rDEAtEnd: 0
   attacksToCombine: []
-  canAtk: 1
+  canAtk: 0

@@ -32,12 +32,20 @@ public class PlayerMovementScript : MonoBehaviour
 
     public Animator canvasAnim;
     bool playerWon = false;
+
+    public AudioClip engineRev;
+    public float audioVolume;
+    public SoundFXManager soundManager;
     //public GameObject deathEffect;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        if (soundManager == null)
+        {
+            soundManager = GameObject.Find("GameManager").GetComponent<SoundFXManager>();
+        }
         WaveManager.curStar = 1;
     }
 
@@ -157,10 +165,12 @@ public class PlayerMovementScript : MonoBehaviour
 
             if (moveDirection == 1)
             {
+                soundManager.PlaySoundFXClip(engineRev, transform, audioVolume, 1, 1, false);
                 actualMovementSpeed = Mathf.Lerp(actualMovementSpeed, maxMovementSpeed, accelerationSpeed * Time.deltaTime);
             }
             else if (moveDirection == -1)
             {
+                soundManager.PlaySoundFXClip(engineRev, transform, audioVolume, 1, 1, false);
                 actualMovementSpeed = Mathf.Lerp(actualMovementSpeed, -maxMovementSpeed, accelerationSpeed * Time.deltaTime);
             }
             else
