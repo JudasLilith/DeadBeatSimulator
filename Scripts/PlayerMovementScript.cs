@@ -29,14 +29,17 @@ public class PlayerMovementScript : MonoBehaviour
     public GameObject fire;
     public GameObject hitOnce;
     public GameObject hitTwice;
-    public GameObject deathEffect;
+
+    public Animator canvasAnim;
+    bool playerWon = false;
+    //public GameObject deathEffect;
 
 
     // Start is called before the first frame update
-    //void Start()
-    //{
-
-    //}
+    void Start()
+    {
+        WaveManager.curStar = 1;
+    }
 
     // Update is called once per frame
     void changeTurnSpeed()
@@ -60,7 +63,10 @@ public class PlayerMovementScript : MonoBehaviour
 
     public void takeDamage()
     {
-        playerMaxHits -= 1;
+        if (WaveManager.curStar != -99)
+        {
+            playerMaxHits -= 1;
+        }
         if (playerMaxHits == 2)
         {
             smoke.SetActive(true);
@@ -71,11 +77,12 @@ public class PlayerMovementScript : MonoBehaviour
             fire.SetActive(true);
             hitTwice.SetActive(true);
         }
-        if (playerMaxHits <= 0)
+        if (playerMaxHits <= 0 && playerAlive)
         {
             playerAlive = false;
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            canvasAnim.Play("PlayerLose");
+            //Instantiate(deathEffect, transform.position, Quaternion.identity);
+            //Destroy(gameObject);
             //die
         }
     }
@@ -84,6 +91,11 @@ public class PlayerMovementScript : MonoBehaviour
     {
         if (playerAlive)
         {
+            if (WaveManager.curStar == -99 && !playerWon)
+            {
+                playerWon = true;
+                canvasAnim.Play("PlayerWin");
+            }
             //Turning stuff
             angleVec = new Vector2(angleLeft + angleRight, angleUp + angleDown);
             if (Input.GetKey(KeyCode.UpArrow))
