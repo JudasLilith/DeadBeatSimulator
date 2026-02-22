@@ -189,7 +189,7 @@ MonoBehaviour:
   timeTillDisappear: 20
   acceleration: 25
   decellerationMultiplier: 3.5
-  maxSpeed: 25
+  maxSpeed: 27
   turnSpeed: 0
   maxTurnSpeed: 0
   useBaseMovement: 1
@@ -200,7 +200,7 @@ MonoBehaviour:
   distanceOfCircleCast: 1.5
   partOfBossWave: 1
   secondaryASource: {fileID: 0}
-  maxVolume: 0.8
+  maxVolume: -13.96
   hitSound: {fileID: 0}
   hitVolume: 0
 --- !u!50 &6396245431505785919

@@ -101,12 +101,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6a12647fca2c44cb854f11376156c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeTillDisappear: 12
+  timeTillDisappear: 10
   acceleration: 1
   decellerationMultiplier: 3.5
-  maxSpeed: 18
+  maxSpeed: 17
   turnSpeed: 1
-  maxTurnSpeed: 3
+  maxTurnSpeed: 4
   useBaseMovement: 1
   doDamageOnContact: 1
   basicPathfindingContacts:
@@ -117,7 +117,7 @@ MonoBehaviour:
   secondaryASource: {fileID: 0}
   maxVolume: 1
   hitSound: {fileID: 8300000, guid: c91e2f88e9223854bacc42f9fff7af79, type: 3}
-  hitVolume: 1
+  hitVolume: 1.5
 --- !u!50 &3576273622884719355
 Rigidbody2D:
   serializedVersion: 4

@@ -10,6 +10,7 @@ public class WaveManager : MonoBehaviour
     float timer = 0;
     float waveTimer = 0;
     float timerCount = 60;
+    float blinkerTimer = 0;
     static public int curStar = 1;
     public float maxSpawnDelay = 3;
     public float minSpawnDelay = 1;
@@ -22,6 +23,8 @@ public class WaveManager : MonoBehaviour
     public GameObject boss;
     bool spawnedBoss = false;
     public Sprite fullStar;
+    public GameObject starContainer;
+    bool canBlinkAgain = true;
     public Image star1;
     public Image star2;
     public Image star3;
@@ -39,6 +42,21 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
         spawnDelay = Random.Range(minSpawnDelay, maxSpawnDelay);
+    }
+
+    IEnumerator starBlinking()
+    {
+        starContainer.SetActive(true);
+        for (int i = 0; i < 6; i++)
+        {
+            starContainer.SetActive(true);
+            yield return new WaitForSeconds(0.25f);
+            starContainer.SetActive(false);
+            yield return new WaitForSeconds(0.25f);
+        }
+        starContainer.SetActive(true);
+        canBlinkAgain = true;
+        blinkerTimer = 0;
     }
 
     // Update is called once per frame
@@ -76,9 +94,15 @@ public class WaveManager : MonoBehaviour
         waveTimer += Time.deltaTime;
         timer += Time.deltaTime;
         timerCount -= Time.deltaTime;
+        blinkerTimer += Time.deltaTime;
         if (timerCount <= 0)
         {
             timerCount = 60;
+        }
+        if (blinkerTimer >= 27 && canBlinkAgain)
+        {
+            canBlinkAgain = false;
+            StartCoroutine(starBlinking());
         }
         
         if (waveTimer >= spawnDelay)
