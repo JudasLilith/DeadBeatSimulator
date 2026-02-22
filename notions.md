@@ -1,6 +1,10 @@
 # So What we have to do RN
 
 ### Main Component 
+- ❗️ Figure out how to ship/deploy
+  - Upload to [itch.io](http://itch.io/) (ask whether has to be web or can be zip file)
+  - Record to 2-4min video
+  - Upload video to YouTube with GitHub and itch.io links in description
 - **Aaron:**
   - Mobs
     - Assets
@@ -15,15 +19,13 @@
       - ✅ Input: Wii remove or keyboard/mouse (Toggle)
         - ✅ Create one static variable for controller (make object not destroy when changing scenes)
       - ✅ Volume (slider)
-        - ⛔️ Test once sounds have been added
-        - ⛔️ Add audio to `Audio` folder (create one to keep things organized)
-        - ⛔️ Add audio files as `Audio Source` components to `Canvas` game object in `TitleScreen`
-        - ⛔️ Ensure each audio file is set up correctly (ex. loop, play on wake, default volume, etc)
-        - ⛔️ Credit creator of audio file in credits after ending screen
+        - ✅ Test once sounds have been added
+        - ✅ Add audio to `Audio` folder (create one to keep things organized)
+        - ✅ Add audio files as `Audio Source` components to `Canvas` game object in `TitleScreen`
     - ✅ Help button
       - ✅ How to play (update to readme as needed)
-        - ⛔️ Ensure number of minutes matches with actual timer (and readme)
-        - ⛔️ Update to include divorce paper and bottle opening (along with readme)
+        - ✅ Ensure number of minutes matches with actual timer (and readme)
+        - ✅ Update to include divorce paper and breathalyzer (along with readme)
       - ✅ Creators
   - ✅ Credits
     - ✅ Each team member's role
@@ -32,8 +34,9 @@
     - ⛔️ Creators of audio
     - ⛔️ Connect to ending screens
   - ✅ Cutscene
-  - ⛔️ Divorce papers (sign using A button)
-- ❗️ Figure out how to ship/deploy
+    - ⛔️ Ensure it works on all devices
+    - ⛔️ Maybe add text explain story
+  - ✅ Divorce papers (sign using A button)
 
 ### Integration with Hardware
 - Divorce paper Mouse writing

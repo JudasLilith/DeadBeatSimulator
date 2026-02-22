@@ -1,10 +1,10 @@
 # DeadBeatSimulator
 
-*Simulate a dead beat dad on demand!*
+*Simulate a deadbeat dad on demand!*
 
-You are a dead beat dad driving home from the local bar. You get pulled over by the cops to take a breathalyzer test, but since you refuse, the cops start chasing you just 3 minutes away from your home.
+You are a deadbeat dad. Your wife is unhappy and wants a divorce, so you decide to go to a bar. As you drive home from the bar, you get pulled over by the cops to take a breathalyzer test. Since your blood alcohol concentration is way too high, you speed away from the cops to avoid getting arrested, so the cops start chasing you just **3 minutes** away from your home.
 
-**Your Goal**: Avoid the cops long enough to get home!
+> **Your Goal**: Avoid the cops long enough to get home!
 
 ## How to Play
 
@@ -14,7 +14,19 @@ There are two options to use for the controller:
 
 2. Keyboard + mouse
 
-### Wii Remote
+### Wii Remote + Breathalyzer
+
+To sign the divorce papers using a Wii remote:
+
+1. Position the cursor at your desired location for your signature
+
+2. Press and hold the B button (on the back) to write on the screen
+
+3. Press the `Submit` button once you are done
+
+To take the breathalyzer test, place the open source of alcohol close to the cut half bottle.
+
+To drive your car during the chase using a Wii remote:
 
 - **Move forward** - 1
 
@@ -22,7 +34,19 @@ There are two options to use for the controller:
 
 - **Turn** - Arrow keys
 
-### Keyboard
+### Keyboard + Mouse
+
+To sign the divorce papers using a mouse:
+
+1. Position the cursor at your desired location for your signature
+
+2. Press and hold the left-click button to write on the screen
+
+3. Press the `Submit` button once you are done
+
+To skip the breathalyzer test, press the `Y` key.
+
+To drive your car during the chase using a keyboard:
 
 - **Move forward** - Page up / Fn + up arrow
 
