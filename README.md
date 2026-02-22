@@ -2,9 +2,9 @@
 
 *Simulate a dead beat dad on demand!*
 
-You are a dead beat dad driving home from the local bar. You get pulled over by the cops to take a breathalyzer test, but since you refuse, the cops start chasing you just 5 minutes away from your home.
+You are a dead beat dad driving home from the local bar. You get pulled over by the cops to take a breathalyzer test, but since you refuse, the cops start chasing you just 3 minutes away from your home.
 
-**Your Goal**: Escape the cops long enough to get home!
+**Your Goal**: Avoid the cops long enough to get home!
 
 ## How to Play
 
@@ -14,7 +14,7 @@ There are two options to use for the controller:
 
 2. Keyboard + mouse
 
-### Wii Remote + Breathalyzer
+### Wii Remote
 
 - **Move forward** - 1
 
@@ -22,7 +22,7 @@ There are two options to use for the controller:
 
 - **Turn** - Arrow keys
 
-### Keyboard + Mouse
+### Keyboard
 
 - **Move forward** - Page up / Fn + up arrow
 
