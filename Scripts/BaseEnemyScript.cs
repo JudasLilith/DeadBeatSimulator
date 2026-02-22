@@ -24,26 +24,33 @@ public class BaseEnemyScript : MonoBehaviour
     public float distanceOfCircleCast;
 
     float timerForDamageCooldown = 2.5f;
+
+    public bool partOfBossWave = false;
     // Start is called before the first frame update
     void Start()
     {
         obstacleAvoidanceResult = new RaycastHit2D[10];
         target = GameObject.FindGameObjectWithTag("Player").transform;
         Vector2 dir = target.position - transform.position;
-        transform.eulerAngles = new Vector3(0, 0, Mathf.Deg2Rad * Mathf.Atan2(dir.y, dir.x));
+        transform.eulerAngles = new Vector3(0, 0, Mathf.Rad2Deg * Mathf.Atan2(dir.y, dir.x));
         StartCoroutine(startDisappear());
+        setStartAngle();
     }
 
     public void setStartAngle()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         Vector2 dir = target.position - transform.position;
-        transform.eulerAngles = new Vector3(0, 0, Mathf.Deg2Rad * Mathf.Atan2(dir.y, dir.x));
+        transform.eulerAngles = new Vector3(0, 0, Mathf.Rad2Deg * Mathf.Atan2(dir.y, dir.x));
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!partOfBossWave && WaveManager.curStar >= 5 && useBaseMovement)
+        {
+            StartCoroutine(Disappear());
+        }
         if (useBaseMovement)
         {
             timerForDamageCooldown += Time.deltaTime;
@@ -130,7 +137,7 @@ public class BaseEnemyScript : MonoBehaviour
             float rotateAmount = Mathf.LerpAngle(transform.eulerAngles.z, targetRotate, maxTurnSpeed * 0.01f);
             transform.eulerAngles = new Vector3(0, 0, rotateAmount);
             yield return new WaitForSeconds(0.01f);
-            curSpeed = Mathf.Lerp(curSpeed, maxSpeed * 3f, acceleration * decellerationMultiplier * 0.01f);
+            curSpeed = Mathf.Lerp(curSpeed, maxSpeed * 3f, acceleration * decellerationMultiplier * 0.015f);
             transform.Translate(new Vector2(1, 0) * curSpeed * Time.deltaTime);
         }
         Destroy(gameObject);

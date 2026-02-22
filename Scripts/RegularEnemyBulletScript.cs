@@ -429,7 +429,7 @@ public class RegularEnemyBulletScript : MonoBehaviour
                 //{
                 //    Instantiate(deathEffect, transform.position, Quaternion.identity);
                 //}
-                if (collision.GetComponent<PlayerMovementScript>() != null /*&& GameManagerScript.playerDashing == false && GameManagerScript.playerTookDmg == false && canDoDmg == true && GameManagerScript.bossAnimationSignalReceivedINTRO == false*/)
+                if (collision.GetComponent<PlayerMovementScript>() != null && canDoDmg == true)
                 {
                     Debug.Log("hit");
                     collision.GetComponent<PlayerMovementScript>().takeDamage();
