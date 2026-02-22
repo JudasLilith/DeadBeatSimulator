@@ -22,7 +22,7 @@
         - ✅ Test once sounds have been added
         - ✅ Add audio to `Audio` folder (create one to keep things organized)
         - ✅ Add audio files as `Audio Source` components to `Canvas` game object in `TitleScreen`
-        - ⛔️ Add links to audio in readme
+        - ✅ Add links to music in readme
     - ✅ Help button
       - ✅ How to play (update to readme as needed)
         - ✅ Ensure number of minutes matches with actual timer (and readme)
@@ -34,8 +34,6 @@
     - ✅ Play again button (goes to scene index 1)
     - ⛔️ Connect to ending screens
   - ✅ Cutscene
-    - ⛔️ Ensure it works on all devices
-    - ⛔️ Maybe add text explain story
   - ✅ Divorce papers (sign using A button)
 
 ### Integration with Hardware
