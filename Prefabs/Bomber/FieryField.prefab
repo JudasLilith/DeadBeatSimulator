@@ -4858,7 +4858,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.065053314}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7082775733034118389}
@@ -9691,7 +9691,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.1805768, y: -1.2740092, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2628411496514026995}
@@ -9870,7 +9870,7 @@ MonoBehaviour:
   doDAttackWBOrP: 0
   deathEffect: {fileID: 3199673326672276059, guid: 2abfd389f558d1944a3fdd31dbae3b04, type: 3}
   diesOut: 1
-  dieOutTime: 4
+  dieOutTime: 3.5
   colRadius: 1
   damageCooldown: 1
   expanderSize: {x: 0, y: 0}

@@ -256,7 +256,7 @@ MonoBehaviour:
   yDisplacement: 0
   moveAheadSpeed: 0
   moveSpeedMin: 18
-  moveSpeedMax: 32
+  moveSpeedMax: 28
   rotateWhenMoving: 0
   rotateSpeed: 0
   amountOfBounces: 0
