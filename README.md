@@ -83,3 +83,9 @@ To drive your car during the chase using a keyboard:
 7. Move the `DeadBeatSimulator` folder to the `Assets` folder of your newly created Unity project
 
 8. Return to your open Unity project, wait for it to finish loading, and press the play button at the top to run the game
+
+## Music Credits
+
+- [The Boondocks Intro Theme Song](https://youtu.be/f26UIYCRg1o?si=P3FGNaEGr1_KzZrw)
+
+- [Asgore Runs Over Dess](https://youtu.be/L4MlbwcaKLo?si=ZfBr4uj90EGvtLq1)
