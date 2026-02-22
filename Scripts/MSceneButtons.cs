@@ -16,6 +16,20 @@ public class MSceneButtons : MonoBehaviour
         StartCoroutine(beer());
     }
 
+    public void goToCredit()
+    {
+        StartCoroutine(creditssStuff());
+    }
+
+    IEnumerator creditssStuff()
+    {
+        WaveManager.curStar = 1;
+        canvasAnim.Play("Restart");
+        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.01f);
+        SceneManager.LoadScene("Credits");
+    }
+
     IEnumerator beer()
     {
         canvasAnim.Play("Restart");

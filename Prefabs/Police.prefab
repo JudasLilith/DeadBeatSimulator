@@ -109,7 +109,7 @@ MonoBehaviour:
   timeTillDisappear: 15
   acceleration: 0.75
   decellerationMultiplier: 3.5
-  maxSpeed: 13
+  maxSpeed: 12
   turnSpeed: 1
   maxTurnSpeed: 7
   useBaseMovement: 1

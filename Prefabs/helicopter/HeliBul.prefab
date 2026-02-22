@@ -255,8 +255,8 @@ MonoBehaviour:
   changesOfSpace: {x: 0, y: 0}
   yDisplacement: 0
   moveAheadSpeed: 0
-  moveSpeedMin: 35
-  moveSpeedMax: 35
+  moveSpeedMin: 33
+  moveSpeedMax: 33
   rotateWhenMoving: 0
   rotateSpeed: 0
   amountOfBounces: 0
