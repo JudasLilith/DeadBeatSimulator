@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 100112000}
   - component: {fileID: 100112001}
+  - component: {fileID: 100112002}
   m_Layer: 5
   m_Name: WiiToggle
   m_TagString: Untagged
@@ -208,6 +209,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &100112002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100111999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bc0d56b4ae14e47b978d4799e1d0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 0}
+  gray: {r: 0.35686275, g: 0.31764707, b: 0.29411766, a: 1}
+  controllerData: {fileID: 0}
 --- !u!1 &163850821
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 163850822}
   - component: {fileID: 163850823}
+  - component: {fileID: 163850824}
   m_Layer: 5
   m_Name: KeyboardToggle
   m_TagString: Untagged
@@ -294,6 +311,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &163850824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163850821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bc0d56b4ae14e47b978d4799e1d0b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 0}
+  gray: {r: 0.35686275, g: 0.31764707, b: 0.29411766, a: 1}
+  controllerData: {fileID: 0}
 --- !u!1 &199790519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,6 +2628,51 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1669730857
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1669730858}
+  - component: {fileID: 1669730859}
+  m_Layer: 0
+  m_Name: ChosenController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1669730858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669730857}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 619.5298, y: 225.14883, z: 2.7453587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669730859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669730857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f51d45660d2f48bc950bae491e2e695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWii: 1
 --- !u!1 &1742890425
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,3 +3259,4 @@ SceneRoots:
   - {fileID: 267223528}
   - {fileID: 1307625983}
   - {fileID: 199790522}
+  - {fileID: 1669730858}
