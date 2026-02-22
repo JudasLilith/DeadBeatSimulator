@@ -19428,7 +19428,7 @@ MonoBehaviour:
   timeTillDisappear: 60
   acceleration: 0.75
   decellerationMultiplier: 3.5
-  maxSpeed: 10
+  maxSpeed: 12
   turnSpeed: 0.3
   maxTurnSpeed: 2.5
   useBaseMovement: 1
@@ -19441,7 +19441,7 @@ MonoBehaviour:
   secondaryASource: {fileID: 0}
   maxVolume: 0.6
   hitSound: {fileID: 8300000, guid: c91e2f88e9223854bacc42f9fff7af79, type: 3}
-  hitVolume: 1
+  hitVolume: 1.5
 --- !u!50 &2164332220717177948
 Rigidbody2D:
   serializedVersion: 4

@@ -8,8 +8,9 @@ public class CutsceneManager : MonoBehaviour
     public CanvasGroup fader;
     public CanvasGroup cutscene;
     public GameObject menus;
-    public float fadeDuration = 0.5f;
-    public float cutsceneDisplayTime = 0.5f;
+    public float fadeDuration = 1f;
+    public float cutsceneDisplayTime = 5f;
+    public Animator canvasAnim;
 
     // When button is clicked
     public void StartCutscene()
@@ -21,7 +22,9 @@ public class CutsceneManager : MonoBehaviour
     IEnumerator CutsceneRoutine()
     {
         yield return StartCoroutine(Fade(cutscene, 0, 1)); // Fade in cutscene
-        yield return new WaitForSeconds(cutsceneDisplayTime);
+        yield return new WaitForSeconds(2.5f);
+        canvasAnim.Play("BeerSip");
+        yield return new WaitForSeconds(cutsceneDisplayTime - 2.5f);
         yield return StartCoroutine(Fade(fader, 0, 1)); // Fade out to black
         SceneManager.LoadScene(1);
     }

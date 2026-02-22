@@ -20,7 +20,7 @@ public class BreathalyzerScript : MonoBehaviour
     IEnumerator goToMainMenu()
     {
         canvasAnim.Play("BeerSip");
-        yield return new WaitForSeconds(1.75f);
+        yield return new WaitForSeconds(6.25f);
         SceneManager.LoadScene("MainScene");
     }
 }

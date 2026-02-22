@@ -75,15 +75,22 @@ public class PlayerMovementScript : MonoBehaviour
         {
             playerMaxHits -= 1;
         }
-        if (playerMaxHits == 2)
+        if (playerMaxHits == 4)
+        {
+
+            hitOnce.SetActive(true);
+        }
+        if (playerMaxHits == 3)
         {
             smoke.SetActive(true);
-            hitOnce.SetActive(true);
+        }
+        if (playerMaxHits == 2)
+        {
+            hitTwice.SetActive(true);
         }
         if (playerMaxHits == 1)
         {
             fire.SetActive(true);
-            hitTwice.SetActive(true);
         }
         if (playerMaxHits <= 0 && playerAlive)
         {

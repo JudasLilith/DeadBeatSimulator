@@ -11,6 +11,19 @@ public class MSceneButtons : MonoBehaviour
         StartCoroutine(actualRestartCurScene());
     }
 
+    public void goToBeerDrink()
+    {
+        StartCoroutine(beer());
+    }
+
+    IEnumerator beer()
+    {
+        canvasAnim.Play("Restart");
+        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.01f);
+        SceneManager.LoadScene("BeerSip");
+    }
+
     IEnumerator actualRestartCurScene()
     {
         WaveManager.curStar = 1;
