@@ -1,11 +1,14 @@
 # So What we have to do RN
 
 ### Main Component 
-- Mobs - **Aaron**
-  - Assets
-  - Programming
-- Assets (Memes, references, etc.) - **Peter**
-- UI screens - **Adriana**
+- **Aaron:**
+  - Mobs
+    - Assets
+    - Programming
+  - Sound effects + music
+  - Success + fail ending screens
+- **Peter:** Assets (Memes, references, etc.)
+- **Adriana:** UI screens
   - ✅ Title screen
     - ✅ Play button (goes to scene index 1)
     - ✅ Options button
@@ -26,8 +29,11 @@
     - ✅ Each team member's role
     - ✅ Title screen person
     - ✅ Play again button (goes to scene index 1)
+    - ⛔️ Creators of audio
     - ⛔️ Connect to ending screens
-  - ⛔️ Cutscene
+  - ✅ Cutscene
+  - ⛔️ Divorce papers (sign using A button)
+- ❗️ Figure out how to ship/deploy
 
 ### Integration with Hardware
 - Divorce paper Mouse writing
