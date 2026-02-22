@@ -2,7 +2,7 @@
 
 ### Main Component 
 - ❗️ Figure out how to ship/deploy
-  - Upload to [itch.io](http://itch.io/) (ask whether it has to be playable on web or can be zip file)
+  - Upload to [itch.io](http://itch.io/) (can be just zip file, though should try to export as web playable)
   - Record to 2-4min video
   - Upload video to YouTube with GitHub and itch.io links in description
 - **Aaron:**
@@ -22,6 +22,7 @@
         - ✅ Test once sounds have been added
         - ✅ Add audio to `Audio` folder (create one to keep things organized)
         - ✅ Add audio files as `Audio Source` components to `Canvas` game object in `TitleScreen`
+        - ⛔️ Add links to audio in readme
     - ✅ Help button
       - ✅ How to play (update to readme as needed)
         - ✅ Ensure number of minutes matches with actual timer (and readme)
@@ -31,7 +32,6 @@
     - ✅ Each team member's role
     - ✅ Title screen person
     - ✅ Play again button (goes to scene index 1)
-    - ⛔️ Creators of audio
     - ⛔️ Connect to ending screens
   - ✅ Cutscene
     - ⛔️ Ensure it works on all devices
