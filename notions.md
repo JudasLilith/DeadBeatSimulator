@@ -2,7 +2,7 @@
 
 ### Main Component 
 - ❗️ Figure out how to ship/deploy
-  - Upload to [itch.io](http://itch.io/) (ask whether has to be web or can be zip file)
+  - Upload to [itch.io](http://itch.io/) (ask whether it has to be playable on web or can be zip file)
   - Record to 2-4min video
   - Upload video to YouTube with GitHub and itch.io links in description
 - **Aaron:**

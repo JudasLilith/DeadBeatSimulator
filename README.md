@@ -1,10 +1,10 @@
 # DeadBeatSimulator
 
-*Simulate a deadbeat dad on demand!*
+> *Simulate a deadbeat dad on demand!*
 
 You are a deadbeat dad. Your wife is unhappy and wants a divorce, so you decide to go to a bar. As you drive home from the bar, you get pulled over by the cops to take a breathalyzer test. Since your blood alcohol concentration is way too high, you speed away from the cops to avoid getting arrested, so the cops start chasing you just **3 minutes** away from your home.
 
-> **Your Goal**: Avoid the cops long enough to get home!
+**Your Goal**: Avoid the cops long enough to get home!
 
 ## How to Play
 
@@ -20,7 +20,7 @@ To sign the divorce papers using a Wii remote:
 
 1. Position the cursor at your desired location for your signature
 
-2. Press and hold the B button (on the back) to write on the screen
+2. Press and hold the `B` button (on the back) to write on the screen
 
 3. Press the `Submit` button once you are done
 
