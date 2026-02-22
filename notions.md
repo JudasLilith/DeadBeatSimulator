@@ -7,7 +7,7 @@
 - Assets (Memes, references, etc.) - **Peter**
 - UI screens - **Adriana**
   - ✅ Title screen
-    - ✅ Play button
+    - ✅ Play button (goes to scene index 1)
     - ✅ Options button
       - ✅ Input: Wii remove or keyboard/mouse (Toggle)
         - ✅ Create one static variable for controller (make object not destroy when changing scenes)
@@ -22,7 +22,10 @@
         - ⛔️ Ensure number of minutes matches with actual timer (and readme)
         - ⛔️ Update to include divorce paper and bottle opening (along with readme)
       - ✅ Creators
-  - ⛔️ Intro cutscenes
+  - ✅ Credits
+    - ✅ Each team member's role
+    - ✅ Title screen person
+    - ✅ Play again button (goes to scene index 1)
   - ⛔️ Ending screens
     - One for success (escape cops, beat kids)
     - One for failure (arrested, CPS protects kids)
