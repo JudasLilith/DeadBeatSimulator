@@ -8,8 +8,8 @@ public class CutsceneManager : MonoBehaviour
     public CanvasGroup fader;
     public CanvasGroup cutscene;
     public GameObject menus;
-    public float fadeDuration = 1.0f;
-    public float cutsceneDisplayTime = 1.0f;
+    public float fadeDuration = 0.5f;
+    public float cutsceneDisplayTime = 0.5f;
 
     // When button is clicked
     public void StartCutscene()
